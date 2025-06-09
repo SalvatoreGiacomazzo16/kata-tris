@@ -1,5 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: black;
+}
+
+
 .press-font {
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
+    color: rgb(0, 255, 0) !important;
 }
+
+button {
+    animation: blink 0.8s infinite;
+    border: 2px solid rgb(0, 255, 0);
+
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+}
+
+
+
+/*Media Query*/

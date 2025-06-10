@@ -34,6 +34,33 @@ button {
     }
 }
 
+/*GRID*/
+.row,
+.col {
+    border: 2px solid rgb(0, 255, 0);
+
+}
+
+
+
+
+.cell {
+
+    aspect-ratio: 1 / 1;
+
+}
+
+.cell:hover {
+    cursor: pointer;
+}
+
 
 
 /*Media Query*/
+
+@media only screen and (min-width: 900px) {
+    #game-grid .container {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+}

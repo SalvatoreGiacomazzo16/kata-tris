@@ -1,9 +1,10 @@
-/* Start button behavior*/
 const startButton = document.getElementById('start-button');
+const startScreen = document.getElementById('start-screen');
 const gameGrid = document.getElementById('game-grid');
-const startContainer = document.getElementById('start-container');
+
 
 startButton.addEventListener('click', () => {
-    startContainer.classList.add('d-none');
+    startScreen.classList.add('d-none');
     gameGrid.classList.remove('d-none');
+
 });

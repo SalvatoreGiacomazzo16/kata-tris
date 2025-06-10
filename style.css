@@ -16,10 +16,14 @@
     color: rgb(0, 255, 0) !important;
 }
 
+
+
+
 button {
     animation: blink 0.8s infinite;
     border: 2px solid rgb(0, 255, 0);
-
+    padding: 20px 40px;
+    font-size: 20px;
 }
 
 @keyframes blink {
@@ -47,6 +51,9 @@ button {
 .cell {
 
     aspect-ratio: 1 / 1;
+    font-size: 8vw;
+    box-sizing: border-box;
+
 
 }
 
@@ -60,7 +67,13 @@ button {
 
 @media only screen and (min-width: 900px) {
     #game-grid .container {
-        max-width: 420px;
+        max-width: 500px;
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .cell {
+        font-size: 12vw;
     }
 }

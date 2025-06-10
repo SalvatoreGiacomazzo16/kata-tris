@@ -72,8 +72,16 @@ button {
     }
 }
 
-@media (max-width: 576px) {
-    .cell {
-        font-size: 12vw;
+@media (min-width: 768px) {
+    #game-grid .container {
+        max-width: 400px;
+        margin: 0 auto;
     }
+
+    @media (max-width: 576px) {
+        .cell {
+            font-size: 12vw;
+        }
+    }
+
 }

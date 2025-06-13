@@ -3,6 +3,7 @@ const startScreen = document.getElementById('start-screen');
 const gameGrid = document.getElementById('game-grid');
 const cells = document.querySelectorAll('.cell');
 const playerText = document.getElementById('currentPlayer');
+const winnerText = document.getElementById('winner');
 
 
 //Start Button handling

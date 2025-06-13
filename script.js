@@ -1,7 +1,8 @@
 const startButton = document.getElementById('start-button');
 const startScreen = document.getElementById('start-screen');
 const gameGrid = document.getElementById('game-grid');
-const singleCell = document.querySelectorAll('.cell');
+const cells = document.querySelectorAll('.cell');
+const playerText = document.getElementById('currentPlayer');
 
 
 //Start Button handling
@@ -14,3 +15,27 @@ startButton.addEventListener('click', () => {
 const playerOne = 'X';
 const playerTwo = 'O';
 let currentPlayer = playerOne;
+
+
+// Mark on grid handling
+cells.forEach(cell => {
+    cell.addEventListener('click', handleCellClick);
+});
+
+function handleCellClick(event) {
+    const cell = event.target;
+
+    //Stop cell if already marked
+    if (cell.textContent === 'X' || cell.textContent === 'O') {
+        return;
+    }
+
+    cell.textContent = currentPlayer;
+
+    //Change player
+    if (currentPlayer === 'X') {
+        currentPlayer = 'O';
+    } else {
+        currentPlayer = 'X';
+    }
+}

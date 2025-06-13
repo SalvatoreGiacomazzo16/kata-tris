@@ -33,9 +33,11 @@ function handleCellClick(event) {
     cell.textContent = currentPlayer;
 
     //Change player
-    if (currentPlayer === 'X') {
-        currentPlayer = 'O';
-    } else {
+    if (currentPlayer === 'O') {
         currentPlayer = 'X';
+    } else {
+        currentPlayer = 'O';
     }
+    //Turn for player on screen
+    playerText.textContent = 'Turn for : ' + currentPlayer;
 }

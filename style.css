@@ -19,7 +19,7 @@
 
 
 
-button {
+#start-button {
     animation: blink 0.8s infinite;
     border: 2px solid rgb(0, 255, 0);
     padding: 20px 40px;
